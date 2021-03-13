@@ -14,6 +14,11 @@
 		A731565825371CE700850191 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A731565625371CE700850191 /* CoreDataDemo.xcdatamodeld */; };
 		A731565A25371CE900850191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A731565925371CE900850191 /* Assets.xcassets */; };
 		A731565D25371CE900850191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A731565B25371CE900850191 /* LaunchScreen.storyboard */; };
+		A7841D2E2539D6F200132997 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7841D2D2539D6F200132997 /* CloudKit.framework */; };
+		A78F20182539C5A90045DC4F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F20142539C5A90045DC4F /* Person+CoreDataClass.swift */; };
+		A78F20192539C5A90045DC4F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F20152539C5A90045DC4F /* Person+CoreDataProperties.swift */; };
+		A78F201A2539C5A90045DC4F /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F20162539C5A90045DC4F /* Family+CoreDataClass.swift */; };
+		A78F201B2539C5A90045DC4F /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F20172539C5A90045DC4F /* Family+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		A731565925371CE900850191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A731565C25371CE900850191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A731565E25371CE900850191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7841D2A2539D6E600132997 /* CoreDataDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataDemo.entitlements; sourceTree = "<group>"; };
+		A7841D2D2539D6F200132997 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A78F20142539C5A90045DC4F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A78F20152539C5A90045DC4F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A78F20162539C5A90045DC4F /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A78F20172539C5A90045DC4F /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7841D2E2539D6F200132997 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				A731564C25371CE700850191 /* CoreDataDemo */,
 				A731564B25371CE700850191 /* Products */,
+				A7841D2C2539D6F200132997 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,8 @@
 		A731564C25371CE700850191 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A7841D2A2539D6E600132997 /* CoreDataDemo.entitlements */,
+				A78F20122539C56F0045DC4F /* Modal */,
 				A731564D25371CE700850191 /* AppDelegate.swift */,
 				A731564F25371CE700850191 /* SceneDelegate.swift */,
 				A731565125371CE700850191 /* ViewController.swift */,
@@ -68,6 +83,25 @@
 				A731565625371CE700850191 /* CoreDataDemo.xcdatamodeld */,
 			);
 			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		A7841D2C2539D6F200132997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7841D2D2539D6F200132997 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A78F20122539C56F0045DC4F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A78F20142539C5A90045DC4F /* Person+CoreDataClass.swift */,
+				A78F20152539C5A90045DC4F /* Person+CoreDataProperties.swift */,
+				A78F20162539C5A90045DC4F /* Family+CoreDataClass.swift */,
+				A78F20172539C5A90045DC4F /* Family+CoreDataProperties.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +176,12 @@
 			files = (
 				A731565225371CE700850191 /* ViewController.swift in Sources */,
 				A731565825371CE700850191 /* CoreDataDemo.xcdatamodeld in Sources */,
+				A78F201A2539C5A90045DC4F /* Family+CoreDataClass.swift in Sources */,
+				A78F20192539C5A90045DC4F /* Person+CoreDataProperties.swift in Sources */,
+				A78F20182539C5A90045DC4F /* Person+CoreDataClass.swift in Sources */,
 				A731564E25371CE700850191 /* AppDelegate.swift in Sources */,
 				A731565025371CE700850191 /* SceneDelegate.swift in Sources */,
+				A78F201B2539C5A90045DC4F /* Family+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDataDemo/CoreDataDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38KM4K4A3R;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
@@ -309,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDataDemo/CoreDataDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38KM4K4A3R;
 				INFOPLIST_FILE = CoreDataDemo/Info.plist;
